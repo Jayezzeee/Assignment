@@ -1,0 +1,127 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://via.placeholder.com/150" alt="Logo" />
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#video-section">Video</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features">
+      <h2>Features</h2>
+      <p>Awesome features of the product...</p>
+    </section>
+
+    <section id="video-section">
+      <h2>Watch the Demo</h2>
+      <iframe id="video" width="560" height="315" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ohmygundam.com.my%2Fbandai-hg-high-grade-1-144%2Fbandai-hgce-1144-mighty-strike-freedom-gundam-66384&psig=AOvVaw3-qIIvJC2d2Bcc46VV450v&ust=1747643389392000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNio9pPNrI0DFQAAAAAdAAAAABAE" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <p>Choose a plan that fits your needs.</p>
+    </section>
+
+    <section id="newsletter">
+      <h2>Subscribe to our newsletter</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" name="email" type="email" placeholder="Enter your email" required />
+        <input id="submit" type="submit" value="Subscribe" />
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#header-img {
+  height: 50px;
+}
+
+/* Flexbox Nav */
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Content sections */
+main {
+  padding-top: 120px;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Flexbox form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+
+** end of styles.css **
+
