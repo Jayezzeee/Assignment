@@ -1,0 +1,132 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">Welcome</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a id="profile-link" href="https://github.com/Jayezzeee/Assignment" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I'm a developer passionate about building impactful projects.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-tile">
+      <a href="https://github.com/Jayezzeee/Assignment" target="_blank">Project 1</a>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: maroon;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#projects {
+  padding: 4rem 2rem;
+  background-color: #e8e8e8;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-tile {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.project-tile a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.project-tile a:hover {
+  color: #007BFF;
+}
+
+@media (max-width: 600px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+}
+
+
+** end of styles.css **
+
